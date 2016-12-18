@@ -1,0 +1,246 @@
+@import "css/bootstrap.min.css";
+
+:root {
+	--primary-color: #fff;
+	--secondary-color: #ccc;
+	--tertiary-color: #777;
+	--border-radius: 5px;
+	--border-width: 1px;
+	--button-background: #ebe9eb;
+	--button-text-color: #515151;
+}
+
+/* Bootstrap mods */
+
+.panel {
+	background: none;
+}
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/* General */
+
+@font-face {
+	font-family: "lucznik";
+	src: url(fonts/Lucznik1303.ttf) format("truetype");
+}
+
+body {
+	background: #000 url(images/logo_adjusted.png) no-repeat fixed center center;
+	background-size: cover;
+	font-family: lucznik;
+	color: var(--primary-color);
+	line-height:18px;
+	border-top: 4px solid;
+}
+
+textarea,
+select,
+input {
+	color: #000!important;
+	border-radius: var(--border-radius);
+	border-width: var(--border-width);
+}
+
+a,
+a:visited {
+	color: var(--primary-color);
+}
+
+a:hover {
+	color: var(--tertiary-color);
+	text-decoration: none;
+}
+
+a.button,
+input[type="submit"],
+button[type="submit"] {
+	background-color: var(--button-background)!important;
+	color: var(--button-text-color)!important;
+}
+
+label {
+	color: var(--secondary-color)
+}
+
+div.woocommerce-message {
+	border: 0;
+	background: none;
+	color: var(--secondary-color);
+}
+
+.woocommerce-message:before{
+	color: var(--secondary-color)!important;
+}
+
+#footer-info {
+	color: var(--tertiary-color);
+}
+
+.shop_table th {
+	color: var(--secondary-color);
+}
+
+p.nocomments {
+	display: none;
+}
+/* Shop */
+
+ul.products {
+	width: 100%!important;
+}
+
+ul.products li.product.first {
+	clear: none!important;
+}
+
+@media only screen and (max-width: 620px) {
+	ul.products li.product {
+		width: 100% !important;
+	}
+}
+
+@media only screen and (min-width: 621px) and (max-width: 975px) {
+	ul.products li.product {
+		width: 40% !important;
+		margin: 0 25px 25px 25px !important;
+	}
+}
+
+@media only screen and (min-width: 976px) {
+	ul.products li.product {
+		width: 28% !important;
+		margin: 0 25px 25px 25px !important;
+	}
+}
+
+ul.products li.type-product:hover {
+	-moz-box-shadow: 0 0 30px var(--secondary-color);
+	-webkit-box-shadow: 0 0 30px var(--secondary-color);
+	box-shadow: 0 0 30px var(--secondary-color);
+}
+
+ul.products li.type-product img {
+	max-width: 270px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+ul.products li.type-product a:hover {
+	color: var(--primary-color);
+}
+
+form.woocommerce-ordering {
+	display: none;
+}
+
+ul.products li.type-product {
+	padding: 10px 10px 25px 10px !important;
+	border: solid var(--border-width);
+	border-radius: var(--border-radius);
+	height: 430px;
+}
+
+
+ul.products li.type-product a.add_to_cart_button {
+	position: absolute;
+	bottom: 30px;
+}
+
+ul.products li.type-product a.added_to_cart {
+	position: absolute;
+	bottom: 5px;
+}
+
+div.product .woocommerce-tabs ul.tabs li.active a {
+	color: var(--button-text-color)!important;
+}
+
+#commentform .comment-form-author label,
+#commentform .comment-form-email label {
+	width: 70px
+}
+
+p.stars .active {
+	color: #fff
+}
+
+/* Product */
+
+.images {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.summary.entry-summary {
+	float: none;
+	width: auto;
+}
+
+#tab-description p {
+	color: var(--secondary-color);
+}
+
+.woocommerce div.product form.cart .variations select {
+	min-width: 50% !important;
+	background-color: #fff;
+}
+
+/* Cart */
+
+.woocommerce table.shop_table {
+	border-radius: var(--border-radius)!important;
+	border-width: var(border-width)!important;
+	border-color: white !important;
+}
+
+#payment {
+	background: none!important;
+}
+
+ul.wc_payment_methods {
+	border:none!important;
+}
+
+.includes_tax {
+	display: none;
+}
+
+/* Checkout */
+@media only screen and (max-width: 500px) {
+	.woocommerce form .form-row {
+		width: 100% !important;
+	}
+
+}
+
+#termsCheckboxBox a,
+#termsCheckboxBox a:visited {
+	color: var(--button-text-color);
+}
+
+#termsCheckboxBox a:hover {
+	text-decoration: underline;
+}
+
+/* Confirmation */
+
+.woocommerce-thankyou-order-details.order_details {
+	padding: 0;
+}
+
+.woocommerce .order_details li {
+	color: var(--secondary-color);
+	float: none !important;
+	border: none !important;
+}
+
+.woocommerce .order_details li strong {
+	color: var(--primary-color) !important;
+	display: inline !important;
+}
