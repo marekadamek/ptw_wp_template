@@ -211,6 +211,20 @@ ul.wc_payment_methods {
 	display: none;
 }
 
+.cart_totals {
+	width: 100% !important;
+}
+
+.checkout-button {
+	float: right;
+	width: 50%;
+}
+
+
+.woocommerce-cart .cart-collaterals .cart_totals table th {
+	width: 20% !important;
+}
+
 /* Checkout */
 @media only screen and (max-width: 500px) {
 	.woocommerce form .form-row {
@@ -228,6 +242,10 @@ ul.wc_payment_methods {
 	text-decoration: underline;
 }
 
+#billing_country_field,
+#shipping_country_field {
+	display: none;
+}
 /* Confirmation */
 
 .woocommerce-thankyou-order-details.order_details {
@@ -243,4 +261,9 @@ ul.wc_payment_methods {
 .woocommerce .order_details li strong {
 	color: var(--primary-color) !important;
 	display: inline !important;
+}
+
+.wc-bacs-bank-details.order_details.bacs_details .iban,
+.wc-bacs-bank-details.order_details.bacs_details .bic {
+	display: none;
 }
