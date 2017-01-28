@@ -191,6 +191,29 @@ p.stars .active {
 	background-color: #fff;
 }
 
+.product_meta .sku_wrapper {
+	display: none;
+}
+
+.woocommerce-Tabs-panel--description table.size-table {
+	width: 290px;
+	font-size: small;
+}
+
+.woocommerce-Tabs-panel--description table.size-table tr.header th {
+	text-align: center;
+}
+
+.woocommerce-Tabs-panel--description table.size-table th.size-name {
+	width: 80px;
+}
+
+.woocommerce-Tabs-panel--description table.size-table td {
+	color: var(--secondary-color);
+	text-align: center;
+}
+
+
 /* Cart */
 
 .woocommerce table.shop_table {

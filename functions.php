@@ -8,25 +8,6 @@ function woo_add_continue_shopping_button_to_cart() {
 }
 
 add_action( 'woocommerce_after_cart_table', 'woo_add_continue_shopping_button_to_cart' );
-//
-//function custom_store_pickup_field( $fields ) {
-//      $fields['billing']['store_pickup'] = array(
-//            'type'     => 'select',
-//            'options'  => array(
-//                'option_1' => 'Option 1 text',
-//                'option_2' => 'Option 2 text',
-//                 'option_3' => 'Option 2 text'
-//            ),
-//            'label'     => __('Store Pick Up Location', 'woocommerce'),
-//            'required'  => false,
-//            'class'     => array('store-pickup form-row-wide'),
-//            'clear'     => true
-//     );
-//
-//     return $fields;
-//}
-//
-//add_filter( 'woocommerce_checkout_fields' , 'custom_store_pickup_field');
 
 function payment_methods_info( $fields ) {
       echo '<div>';
