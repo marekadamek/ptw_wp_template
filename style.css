@@ -150,6 +150,11 @@ ul.products li.type-product a.add_to_cart_button {
 	bottom: 30px;
 }
 
+ul.products li.type-product a.product_type_variable {
+	position: absolute;
+	bottom: 30px;
+}
+
 ul.products li.type-product a.added_to_cart {
 	position: absolute;
 	bottom: 5px;
@@ -269,6 +274,15 @@ ul.wc_payment_methods {
 #shipping_country_field {
 	display: none;
 }
+
+p.wc-terms-and-conditions label.checkbox input {
+	margin: 7px 0 0 0 !important;
+}
+
+p.wc-terms-and-conditions label.checkbox span:first-of-type {
+	margin-left: 30px
+}
+
 /* Confirmation */
 
 .woocommerce-thankyou-order-details.order_details {
