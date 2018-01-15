@@ -29,12 +29,23 @@
 }
 
 body {
-	background: #000 url(images/logo_adjusted.png) no-repeat fixed center center;
+	background: #000 url(images/logo_adjusted_ptw.png) no-repeat fixed center center;
 	background-size: cover;
 	font-family: lucznik;
 	color: var(--primary-color);
 	line-height:18px;
 	border-top: 4px solid;
+}
+
+body .alert.alert-ptw {
+	color: #feea00;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	border: 1px solid #feea00;
+}
+
+#nav {
+	margin-top: 10px;
 }
 
 textarea,
@@ -251,6 +262,10 @@ ul.wc_payment_methods {
 
 .woocommerce-cart .cart-collaterals .cart_totals table th {
 	width: 20% !important;
+}
+
+div.cross-sells {
+	width: 100% !important;
 }
 
 /* Checkout */

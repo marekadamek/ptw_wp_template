@@ -26,4 +26,6 @@ function filter_woocommerce_bacs_account_fields( $this_account_details ) {
 // add the filter
 add_filter( 'woocommerce_bacs_account_fields', 'filter_woocommerce_bacs_account_fields', 10, 1 );
 
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 20;' ), 20 );
+
 ?>

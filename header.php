@@ -21,8 +21,12 @@
 </head>
 
 <body <?php body_class(); ?>>
-
 	<div class="container">
+
+
+	<!-- div class="alert alert-ptw">
+    </div -->
+
 	<!--headercontainer-->
 	<div id="header_container">
 	
