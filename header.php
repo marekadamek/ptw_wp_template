@@ -24,8 +24,12 @@
 	<div class="container">
 
 
-	<!-- div class="alert alert-ptw">
-    </div -->
+	<div class="alert alert-ptw">
+	    <font size="5">Uwaga!</font> Wakacyjna promocja w sklepie Pull The Wire \m/:
+	     <br> - dowolna płyta + koszulka <span style="margin-left: 10px; margin-right:10px">-></span> rabat <font size="5">10%</font> na całe zamówienie
+	     <br> - płyta 'W polsce jest ogień' + płyta 'Negatyw' + koszulka <span style="margin-left: 10px; margin-right:10px">-></span> rabat <font size="5">15%</font> na całe zamówienie
+         <br>Promo do końca wakacji lub do wyczerpania zapasów.
+    </div>
 
 	<!--headercontainer-->
 	<div id="header_container">

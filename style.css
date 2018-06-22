@@ -29,7 +29,7 @@
 }
 
 body {
-	background: #000 url(images/logo_adjusted_ptw.png) no-repeat fixed center center;
+	background: #000 url(images/logo_adjusted.png) no-repeat fixed center center;
 	background-size: cover;
 	font-family: lucznik;
 	color: var(--primary-color);

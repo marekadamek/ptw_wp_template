@@ -28,4 +28,45 @@ add_filter( 'woocommerce_bacs_account_fields', 'filter_woocommerce_bacs_account_
 
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 20;' ), 20 );
 
+
+function console_log( $data ){
+  echo '<script>';
+  echo 'console.log('. json_encode( $data ) .')';
+  echo '</script>';
+}
+
+// PROMOCJA
+function bundles_discount(WC_Cart $cart) {
+    global $woocommerce;
+
+    $cd1 = false;
+    $cd2 = false;
+    $tshirt = false;
+
+    foreach ($cart->get_cart() as $item ) {
+       $product = $item['data'];
+        if ($product->id == 235) { //NEGATYW
+            $cd1 = true;
+        }
+
+        if ($product->id == 43) { // W POLSCE JEST OGIEN
+            $cd2 = true;
+        }
+
+       if (has_term('koszulka', 'product_cat', $product->id )) {
+           $tshirt = true;
+       }
+    }
+
+    if ($cd1 && $cd2 && $tshirt) {
+        $discount = $cart->subtotal * 0.15;
+        $cart->add_fee('Rabacik 15% \m/ (2xpłyta+koszulka)', -$discount);
+    } else if (($cd1 || $cd2) && $tshirt) {
+        $discount = $cart->subtotal * 0.1;
+        $cart->add_fee("Rabacik 10% \\m/ (płyta+koszulka)", -$discount);
+    }
+}
+
+add_action('woocommerce_cart_calculate_fees', 'bundles_discount');
+
 ?>
